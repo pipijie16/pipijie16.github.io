@@ -9,6 +9,7 @@
 </head>
 <body>
 
+    <!-- 顶部导航栏 -->
     <nav>
         <a href="#home" onclick="showSection('home')">Home</a>
         <a href="#research" onclick="showSection('research')">Research Interests</a>
@@ -16,8 +17,10 @@
         <a href="#contact" onclick="showSection('contact')">Connect with Me</a>
     </nav>
 
+    <!-- 内容容器 -->
     <div class="container">
 
+        <!-- Home 页面 -->
         <section id="home" class="content-section">
             <div class="profile-section">
                 <h1>Chengjie Li</h1>
@@ -26,6 +29,7 @@
             <img src="profile.jpg" alt="Profile Picture" class="profile-img">
         </section>
 
+        <!-- Research Interests 页面 -->
         <section id="research" class="content-section">
             <h2>Research Interests</h2>
             <ul>
@@ -38,6 +42,7 @@
             </ul>
         </section>
 
+        <!-- Education 页面 -->
         <section id="education" class="content-section">
             <h2>Education</h2>
             <ul>
@@ -46,6 +51,7 @@
             </ul>
         </section>
 
+        <!-- Contact 页面 -->
         <section id="contact" class="content-section">
             <h2>Connect with Me</h2>
             <ul>
@@ -60,14 +66,18 @@
         <p>© 2024 Chengjie Li. Built with 💻 by Chengjie.</p>
     </footer>
 
+    <!-- JavaScript 实现内容切换 -->
     <script>
         function showSection(sectionId) {
+            // 隐藏所有内容区块
             document.querySelectorAll('.content-section').forEach(function(section) {
                 section.style.display = 'none';
             });
+            // 显示选中的内容区块
             document.getElementById(sectionId).style.display = 'flex';
         }
 
+        // 初始只显示Home页面
         showSection('home');
     </script>
 </body>
