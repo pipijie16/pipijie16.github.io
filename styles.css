@@ -1,44 +1,33 @@
-/* 全局样式 */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    background-color: #ffffff; /* 白色背景 */
+    background-color: #ffffff;
     color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* 容器样式 */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-top: 80px; /* 给顶部导航栏留出空间 */
-}
-
-/* 导航栏样式 */
 nav {
     position: fixed;
     top: 0;
-    width: 100%;
+    right: 0;
     background-color: #ffffff;
+    padding: 10px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 15px 0;
     z-index: 1000;
 }
 
 nav a {
     color: #1cbf73;
     text-decoration: none;
-    font-size: 1.1em;
-    font-weight: bold;
+    font-size: 1em;
+    margin: 0 10px;
     transition: color 0.3s ease;
 }
 
@@ -46,93 +35,60 @@ nav a:hover {
     color: #17a763;
 }
 
-/* 标题和头像 */
-header {
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding-top: 60px;
+    margin-top: 60px; 
     text-align: center;
-    margin-top: 100px; /* 与导航栏留出距离 */
 }
 
 .profile-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #333333;
+    margin-top: 20px;
 }
 
 .profile-img {
-    width: 180px;
-    height: 180px;
-    border-radius: 8px; 
-    border: 2px solid #1cbf73;
-    margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 .profile-section h1 {
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: bold;
     margin: 10px 0;
 }
 
 .profile-section p {
-    font-size: 1.3em;
-    color: #1cbf73;
+    font-size: 1.2em;
+    color: #555555;
 }
 
-main {
-    margin-top: 30px;
-}
-
-section {
-    margin-bottom: 50px;
-    padding: 0 20px;
+.content-section {
+    display: none;
 }
 
 section h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
     color: #1cbf73;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 section p, section ul {
     font-size: 1em;
-    line-height: 1.6;
     color: #555555;
+    line-height: 1.6;
 }
 
 ul li {
-    list-style-type: none;
     padding: 5px 0;
+    list-style-type: none;
 }
 
-.download-cv {
-    display: inline-block;
+footer {
     margin-top: 20px;
-    background-color: #1cbf73;
-    color: #ffffff;
-    padding: 10px 30px;
-    font-size: 1.1em;
-    font-weight: bold;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.download-cv:hover {
-    background-color: #17a763;
-}
-
-@media (max-width: 768px) {
-    .profile-section h1 {
-        font-size: 2em;
-    }
-
-    .profile-section p {
-        font-size: 1.1em;
-    }
-
-    .profile-img {
-        width: 140px;
-        height: 140px;
-    }
+    font-size: 0.9em;
+    color: #888888;
 }
