@@ -94,10 +94,10 @@ nav a:hover {
 
 /* Research Interests Section */
 .content-section h2 {
-    font-size: 2.5em; /* Keeps the title size */
+    font-size: 24px; /* Keeps the title size */
     font-weight: 700;
     color: #333333;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     margin-left: 10px; /* Slightly left-aligned title */
 }
 
@@ -121,7 +121,7 @@ nav a:hover {
 }
 
 .content-section .content ul li {
-    padding: 8px 0; /* Additional spacing between list items */
+    padding: 10px 0; /* Additional spacing between list items */
 }
 
 /* 页脚样式 */
