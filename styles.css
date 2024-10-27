@@ -92,33 +92,36 @@ nav a:hover {
     transform: translateY(-30px); /* Moves the image upwards */
 }
 
-/* 其他页面标题和内容布局 */
+/* Research Interests Section */
 .content-section h2 {
-    font-size: 2.5em; /* 标题大小参考图1 */
+    font-size: 2.5em; /* Keeps the title size */
     font-weight: 700;
     color: #333333;
     margin-bottom: 15px;
-    margin-left: 10px; /* 标题稍偏左 */
+    margin-left: 10px; /* Slightly left-aligned title */
 }
 
 .content-section .content {
-    font-size: 1.8em; /* 内容大小参考图1 */
-    line-height: 1.8;
+    font-size: 1.8em; /* Keeps the font size for list items */
+    line-height: 2; /* Adds space between list items */
     color: #333333;
     max-width: 500px;
-    margin-left: 40px; /* 内容稍偏右 */
+    margin-left: 40px; /* Slightly right-aligned content */
     margin-top: 50px;
 }
 
-/* 列表项样式 */
+/* Adjusts list styling */
 .content-section .content ul {
     list-style-position: outside;
     list-style-type: disc;
     padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adds space between each list item */
 }
 
 .content-section .content ul li {
-    padding: 8px 0; /* 列表项间距参考图1 */
+    padding: 8px 0; /* Additional spacing between list items */
 }
 
 /* 页脚样式 */
