@@ -15,7 +15,6 @@ body {
     min-height: 100vh;
 }
 
-/* 顶部导航栏样式 */
 nav {
     position: fixed;
     top: 20px;
@@ -36,8 +35,7 @@ nav a:hover {
     color: #555555;
 }
 
-/* 主内容容器 */
-.container {
+#home-container {
     width: 100%;
     max-width: 1000px;
     padding-top: 100px;
@@ -47,43 +45,40 @@ nav a:hover {
     text-align: left;
 }
 
-/* Home 页面的布局 */
-.home-layout {
+#home-container .home-layout {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 0 40px;
 }
 
-/* 左侧介绍文本区域 */
-.profile-section {
+#home-container .profile-section {
     text-align: left;
     max-width: 55%;
 }
 
-.profile-section h1 {
+#home-container .profile-section h1 {
     font-size: 3em;
     font-weight: 700;
     margin-bottom: 10px;
     color: #333333;
 }
 
-.position {
+#home-container .position {
     font-size: 1.2em;
     font-weight: 600;
     color: #333333;
     margin-bottom: 20px;
 }
 
-.description {
+#home-container .description {
     font-size: 1em;
     line-height: 1.6;
     color: #555555;
     max-width: 600px;
 }
 
-/* 右侧头像区域 */
-.profile-img {
+#home-container .profile-img {
     width: 250px;
     height: auto;
     border-radius: 8px;
@@ -92,36 +87,46 @@ nav a:hover {
     transform: translateY(-30px); /* Moves the image upwards */
 }
 
-/* 其他页面标题和内容布局 */
-.content-section h2 {
-    font-size: 2.5em; /* 标题大小 */
+#content-container {
+    width: 100%;
+    max-width: 800px;
+    padding-top: 100px;
+    margin-top: 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content-container h2 {
+    font-size: 2.5em; 
     font-weight: 700;
     color: #333333;
     margin-bottom: 15px;
-    text-align: center; /* Centered titles for other pages */
+    text-align: center;
 }
 
-.content-section .content {
-    font-size: 1.8em; /* 内容大小 */
+#content-container .content {
+    font-size: 1.8em;
     line-height: 1.8;
     color: #333333;
     max-width: 600px;
-    text-align: center; /* Center content for better readability */
+    text-align: center;
     margin: 0 auto;
     padding: 20px 0;
 }
 
 /* 列表项样式 */
-.content-section .content ul {
+#content-container .content ul {
     list-style-position: outside;
     list-style-type: disc;
     padding-left: 20px;
     text-align: left; /* Align lists to the left */
 }
 
-.content-section .content ul li {
-    padding: 12px 0; /* Increase spacing between list items */
-    font-size: 1.5em; /* Larger font size for list items */
+#content-container .content ul li {
+    padding: 12px 0; 
+    font-size: 1.5em; /* Increase font size for readability */
 }
 
 /* 页脚样式 */
