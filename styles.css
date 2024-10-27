@@ -94,20 +94,21 @@ nav a:hover {
 
 /* 其他页面标题和内容布局 */
 .content-section h2 {
-    font-size: 2.5em; /* 标题大小参考图1 */
+    font-size: 2.5em; /* 标题大小 */
     font-weight: 700;
     color: #333333;
     margin-bottom: 15px;
-    margin-left: 10px; /* 标题稍偏左 */
+    text-align: center; /* Centered titles for other pages */
 }
 
 .content-section .content {
-    font-size: 1.8em; /* 内容大小参考图1 */
+    font-size: 1.8em; /* 内容大小 */
     line-height: 1.8;
     color: #333333;
-    max-width: 500px;
-    margin-left: 40px; /* 内容稍偏右 */
-    margin-top: 50px;
+    max-width: 600px;
+    text-align: center; /* Center content for better readability */
+    margin: 0 auto;
+    padding: 20px 0;
 }
 
 /* 列表项样式 */
@@ -115,10 +116,12 @@ nav a:hover {
     list-style-position: outside;
     list-style-type: disc;
     padding-left: 20px;
+    text-align: left; /* Align lists to the left */
 }
 
 .content-section .content ul li {
-    padding: 8px 0; /* 列表项间距参考图1 */
+    padding: 12px 0; /* Increase spacing between list items */
+    font-size: 1.5em; /* Larger font size for list items */
 }
 
 /* 页脚样式 */
