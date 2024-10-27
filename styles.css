@@ -42,16 +42,20 @@ nav a:hover {
     max-width: 1000px;
     padding-top: 100px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     margin-top: 80px;
-    text-align: left;
     gap: 40px;
 }
 
-/* 左侧介绍文本区域 */
+/* Home 页面的布局 */
+.home-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
 .profile-section {
-    text-align: left;
     max-width: 55%; /* 减小宽度以留出空间 */
 }
 
@@ -76,24 +80,15 @@ nav a:hover {
     max-width: 600px;
 }
 
-/* 右侧头像区域 */
 .profile-img {
-    width: 250px; /* 增大头像尺寸以平衡布局 */
-    height: auto;
+    width: 250px;
+    height: 250px;
     border-radius: 8px;
     margin-left: 50px; /* 增加头像与文字的间距 */
 }
 
-/* 内容区块隐藏显示 */
-.content-section {
-    display: none;
-    margin-top: 40px;
-    padding: 0 20px;
-    text-align: left;
-}
-
-/* 内容区域标题样式 */
-section h2 {
+/* 其他页面标题和内容布局 */
+.content-section h2 {
     font-size: 2.5em;
     font-weight: 700;
     color: #333333;
@@ -102,13 +97,12 @@ section h2 {
     margin-bottom: 20px;
 }
 
-/* 内容文字样式 */
 .content-section .content {
-    font-size: 1.2em;
+    font-size: 1.3em;
     line-height: 1.8;
     color: #555555;
     max-width: 600px;
-    margin-left: 15%;
+    margin-left: 15%; /* 内容偏右布局 */
 }
 
 /* 页脚样式 */
