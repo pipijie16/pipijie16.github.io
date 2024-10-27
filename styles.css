@@ -1,4 +1,4 @@
-/* Global Styles */
+/* 全局样式 */
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +15,7 @@ body {
     min-height: 100vh;
 }
 
-/* Navigation Bar Styles */
+/* 顶部导航栏样式 */
 nav {
     position: fixed;
     top: 20px;
@@ -36,7 +36,7 @@ nav a:hover {
     color: #555555;
 }
 
-/* Main Content Container */
+/* 主内容容器 */
 .container {
     width: 100%;
     max-width: 1000px;
@@ -47,52 +47,81 @@ nav a:hover {
     text-align: left;
 }
 
-/* Content Layout for "Research Interests" Section */
-.content-section {
+/* Home 页面的布局 */
+.home-layout {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: flex-start;
     padding: 0 40px;
 }
 
-/* Content Layout for "Research Interests" Section */
-.content-section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 40px;
+/* 左侧介绍文本区域 */
+.profile-section {
+    text-align: left;
+    max-width: 55%;
 }
 
-.content-section h2 {
-    font-size: 2.5em; /* Updated title font size to match second image */
-    font-weight: bold;
+.profile-section h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.position {
+    font-size: 1.2em;
+    font-weight: 600;
     color: #333333;
     margin-bottom: 20px;
-    margin-left: 0; /* Center-aligned title */
+}
+
+.description {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555555;
+    max-width: 600px;
+}
+
+/* 右侧头像区域 */
+.profile-img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    transform: translateY(-30px); /* Moves the image upwards */
+}
+
+/* 其他页面标题和内容布局 */
+.content-section h2 {
+    font-size: 2.5em; /* 标题大小参考图1 */
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 15px;
+    margin-left: 10px; /* 标题稍偏左 */
 }
 
 .content-section .content {
-    font-size: 1.5em; /* Updated content font size for readability */
+    font-size: 1.8em; /* 内容大小参考图1 */
     line-height: 1.8;
     color: #333333;
     max-width: 500px;
-    margin-left: 20px; /* Adjusted left margin for balanced alignment */
-    margin-top: 10px;
+    margin-left: 40px; /* 内容稍偏右 */
+    margin-top: 50px;
 }
 
-/* List Style for Research Interests */
+/* 列表项样式 */
 .content-section .content ul {
+    list-style-position: outside;
     list-style-type: disc;
     padding-left: 20px;
 }
 
 .content-section .content ul li {
-    font-size: 1em;
-    padding: 10px 0; /* Increased spacing between list items */
-    color: #333333;
+    padding: 8px 0; /* 列表项间距参考图1 */
 }
 
-/* Footer Styles */
+/* 页脚样式 */
 footer {
     margin-top: auto;
     font-size: 0.9em;
