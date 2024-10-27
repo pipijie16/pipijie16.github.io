@@ -47,7 +47,7 @@ nav a:hover {
     padding-top: 100px; /* 导航栏的高度 */
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     margin-top: 60px; /* 页面内容与导航栏的间距 */
     padding: 0 40px; /* 左右留白 */
 }
@@ -60,21 +60,28 @@ nav a:hover {
 }
 
 .profile-section h1 {
-    font-size: 3.5em;
+    font-size: 3em;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     color: #333333;
 }
 
-.profile-section p {
+.position {
     font-size: 1.5em;
     color: #333333;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1.2em;
     line-height: 1.8;
+    color: #555555;
+    max-width: 600px;
 }
 
 /* 右侧头像区域 */
 .profile-img {
-    width: 220px;
+    width: 250px;
     height: auto; /* 保持原始比例 */
     border-radius: 50%; /* 头像设置为圆形 */
 }
@@ -89,7 +96,7 @@ nav a:hover {
 
 /* 内容区域标题样式 */
 section h2 {
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: bold;
     color: #333333;
     margin-bottom: 15px;
@@ -97,7 +104,7 @@ section h2 {
 
 /* 文本样式 */
 section p, section ul {
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: #333333;
     line-height: 1.8;
 }
