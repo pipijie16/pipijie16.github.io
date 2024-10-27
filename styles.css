@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Microsoft YaHei', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #ffffff; 
     color: #333333;
     display: flex;
     flex-direction: column;
@@ -24,7 +25,7 @@ nav {
 }
 
 nav a {
-    color: #1cbf73;
+    color: #333333;
     text-decoration: none;
     font-size: 1em;
     margin: 0 10px;
@@ -32,14 +33,13 @@ nav a {
 }
 
 nav a:hover {
-    color: #17a763;
+    color: #666666; 
 }
 
 .container {
     width: 100%;
     max-width: 800px;
-    padding-top: 60px;
-    margin-top: 60px; 
+    padding-top: 80px; 
     text-align: center;
 }
 
@@ -50,7 +50,7 @@ nav a:hover {
 .profile-img {
     width: 150px;
     height: 150px;
-    border-radius: 8px;
+    border-radius: 8px; 
     margin-bottom: 15px;
 }
 
@@ -58,11 +58,12 @@ nav a:hover {
     font-size: 2em;
     font-weight: bold;
     margin: 10px 0;
+    color: #333333; 
 }
 
 .profile-section p {
     font-size: 1.2em;
-    color: #555555;
+    color: #555555; 
 }
 
 .content-section {
@@ -72,7 +73,7 @@ nav a:hover {
 section h2 {
     font-size: 1.5em;
     font-weight: bold;
-    color: #1cbf73;
+    color: #333333;
     margin-bottom: 15px;
 }
 
@@ -91,4 +92,5 @@ footer {
     margin-top: 20px;
     font-size: 0.9em;
     color: #888888;
+    text-align: center;
 }
