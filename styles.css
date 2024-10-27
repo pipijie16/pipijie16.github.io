@@ -88,7 +88,8 @@ nav a:hover {
     height: auto;
     border-radius: 8px;
     margin-left: 50px;
-    margin-bottom: 30px; /* 向上微调 */
+    margin-bottom: 50px;
+    transform: translateY(-30px); /* Moves the image upwards */
 }
 
 /* 其他页面标题和内容布局 */
@@ -106,7 +107,7 @@ nav a:hover {
     color: #333333;
     max-width: 500px;
     margin-left: 40px; /* 内容稍偏右 */
-    margin-top: 50px
+    margin-top: 50px;
 }
 
 /* 列表项样式 */
