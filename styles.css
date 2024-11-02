@@ -70,9 +70,10 @@ nav a:hover {
 #content-container h2 {
     font-size: 2.5em;
     font-weight: 700;
+    text-align: left; /* Align heading to the left */
+    padding-left: 20px; /* Optional padding for better visual */
     color: #333333;
     margin-bottom: 30px;
-    text-align: center;
 }
 
 #content-container .content {
@@ -82,19 +83,29 @@ nav a:hover {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px 0;
-    text-align: center;
+    text-align: left;
 }
 
 #content-container ul {
     list-style-position: outside;
     list-style-type: disc;
     padding-left: 40px;
+    max-width: 600px; /* Optional width restriction */
     text-align: left;
 }
 
 /* 列表项样式，增加行间距 */
 #content-container ul li {
-    font-size: 1.4em; /* 增大内容字体 */
+    font-size: 1.2em; /* 增大内容字体 */
     line-height: 2; /* 增加行间距 */
     margin-bottom: 15px; /* 增加列表项之间的间距 */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f0f0f0; /* Optional background for visibility */
 }
