@@ -37,59 +37,42 @@ nav a:hover {
 }
 
 /* Home page name styling */
-.profile-section h1 {
-    font-size: 3em; /* Increase name size */
-    font-weight: 700;
-    margin-bottom: 10px;
+#home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full height for vertical centering */
+    width: 100%;       /* Full width */
 }
 
-/* Subtitle style (position/title below name, slightly smaller) */
-.profile-section .position {
-    font-size: 1.5em;
-    font-weight: 400; /* Remove bold */
-    margin-bottom: 20px;
-}
-
-/* Description style with larger font */
-.profile-section .description {
-    font-size: 1.2em; /* Slightly larger */
-    line-height: 1.8;
-}
-
-/* Align image with text vertically */
-.profile-img {
-    max-width: 150px; /* Set image size */
-    height: auto;
-    margin-left: 20px;
-    margin-top: -100px; /* Adjust vertical alignment */
-}
-
-/* 其他页面的容器 */
-#content-container {
-    width: 100%;
-    max-width: 800px;
-    padding-top: 100px;
-    margin-top: 80px;
+.home-layout {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+
+/* 其他页面的容器 */
+#content-container {
+    width: 80%; /* Set a width that's not too wide */
+    max-width: 800px;
+    padding-top: 100px;
+    margin: 0 auto; /* Center horizontally */
 }
 
 #content-container h2 {
+    text-align: center;
     font-size: 2em;
-    font-weight: 700;
-    text-align: left;
-    padding-left: 20px;
-    margin-bottom: 20px;
-    position: relative;
-    bottom: 20px;
+    margin-top: 40px;
     color: #333333;
 }
 
-#content-container .content, #content-container ul {
-    max-width: 800px; /* Increase width to allow more spread-out content */
+#content-container ul {
     text-align: left;
     padding-left: 20px;
+    list-style-type: disc; /* Adding bullet points for clarity */
 }
 
 /* 列表项样式，增加行间距 */
