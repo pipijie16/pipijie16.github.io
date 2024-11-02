@@ -36,23 +36,32 @@ nav a:hover {
     color: #555555;
 }
 
-/* Home 页面的容器 */
-#home-container {
-    width: 100%;
-    max-width: 1000px;
-    padding-top: 100px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 80px;
-    text-align: left;
+/* Home page name styling */
+.profile-section h1 {
+    font-size: 3em; /* Increase name size */
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
-/* Home 页面的布局 */
-#home-container .home-layout {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 0 40px;
+/* Subtitle style (position/title below name, slightly smaller) */
+.profile-section .position {
+    font-size: 1.5em;
+    font-weight: 400; /* Remove bold */
+    margin-bottom: 20px;
+}
+
+/* Description style with larger font */
+.profile-section .description {
+    font-size: 1.2em; /* Slightly larger */
+    line-height: 1.8;
+}
+
+/* Align image with text vertically */
+.profile-img {
+    max-width: 150px; /* Set image size */
+    height: auto;
+    margin-left: 20px;
+    margin-top: -100px; /* Adjust vertical alignment */
 }
 
 /* 其他页面的容器 */
@@ -66,32 +75,21 @@ nav a:hover {
     align-items: center;
 }
 
-/* 其他页面标题和内容布局 */
 #content-container h2 {
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 700;
-    text-align: left; /* Align heading to the left */
-    padding-left: 20px; /* Optional padding for better visual */
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    bottom: 20px;
     color: #333333;
-    margin-bottom: 30px;
 }
 
-#content-container .content {
-    font-size: 1.6em;
-    line-height: 1.8;
-    color: #333333;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px 0;
+#content-container .content, #content-container ul {
+    max-width: 800px; /* Increase width to allow more spread-out content */
     text-align: left;
-}
-
-#content-container ul {
-    list-style-position: outside;
-    list-style-type: disc;
-    padding-left: 40px;
-    max-width: 600px; /* Optional width restriction */
-    text-align: left;
+    padding-left: 20px;
 }
 
 /* 列表项样式，增加行间距 */
