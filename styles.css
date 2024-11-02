@@ -1,4 +1,4 @@
-/* 全局样式 */
+/* Global reset and font settings */
 * {
     margin: 0;
     padding: 0;
@@ -7,15 +7,15 @@
 }
 
 body {
-    background-color: #ffffff;
-    color: #333333;
+    background-color: #0a0a23; /* Dark background for modern look */
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
 }
 
-/* 顶部导航栏样式 */
+/* Navigation bar */
 nav {
     position: fixed;
     top: 20px;
@@ -25,7 +25,7 @@ nav {
 }
 
 nav a {
-    color: #333333;
+    color: #ffffff;
     text-decoration: none;
     font-size: 1em;
     font-weight: 600;
@@ -33,60 +33,87 @@ nav a {
 }
 
 nav a:hover {
-    color: #555555;
+    color: #00ff99; /* Accent color for hover */
 }
 
-/* Home page name styling */
+/* Home Page Styling */
 #home-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Full height for vertical centering */
-    width: 100%;       /* Full width */
+    min-height: 100vh;
+    width: 100%;
+    text-align: left;
+    gap: 50px;
+    padding: 0 20px;
 }
 
 .home-layout {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
-    gap: 20px;
+    justify-content: center;
 }
 
+.profile-section h1 {
+    font-size: 3em;
+    font-weight: 700;
+    color: #ffffff;
+}
 
-/* 其他页面的容器 */
+.profile-section .position {
+    font-size: 1.5em;
+    color: #00ff99; /* Accent color */
+}
+
+.profile-section .description {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #cccccc; /* Subtle text color */
+}
+
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid #00ff99;
+    margin-left: 20px;
+}
+
+/* Other Pages Layout */
 #content-container {
-    width: 80%; /* Set a width that's not too wide */
+    width: 80%;
     max-width: 800px;
-    padding-top: 100px;
-    margin: 0 auto; /* Center horizontally */
+    padding: 20px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #ffffff;
 }
 
 #content-container h2 {
-    text-align: center;
     font-size: 2em;
-    margin-top: 40px;
-    color: #333333;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffffff;
 }
 
 #content-container ul {
-    text-align: left;
+    list-style: disc;
     padding-left: 20px;
-    list-style-type: disc; /* Adding bullet points for clarity */
 }
 
-/* 列表项样式，增加行间距 */
 #content-container ul li {
-    font-size: 1.2em; /* 增大内容字体 */
-    line-height: 2; /* 增加行间距 */
-    margin-bottom: 15px; /* 增加列表项之间的间距 */
+    font-size: 1.2em;
+    line-height: 2;
+    margin-bottom: 10px;
+    color: #cccccc;
 }
 
+/* Footer */
 footer {
-    position: fixed;
-    bottom: 0;
     width: 100%;
     text-align: center;
     padding: 10px 0;
-    background-color: #f0f0f0; /* Optional background for visibility */
+    background-color: #111111;
+    color: #888888;
 }
