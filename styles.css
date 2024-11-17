@@ -1,21 +1,15 @@
-/* Global reset and font settings */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
+/* 全局背景和文本颜色设置 */
 body {
-    background-color: #0a0a23; /* Dark background for modern look */
-    color: #ffffff;
+    background-color: #ffffff; /* 白色背景 */
+    color: #000000; /* 黑色文字 */
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Navigation bar */
+/* 导航栏调整 */
 nav {
     position: fixed;
     top: 20px;
@@ -25,7 +19,7 @@ nav {
 }
 
 nav a {
-    color: #ffffff;
+    color: #000000; /* 黑色文字适配白色背景 */
     text-decoration: none;
     font-size: 1em;
     font-weight: 600;
@@ -33,87 +27,75 @@ nav a {
 }
 
 nav a:hover {
-    color: #00ff99; /* Accent color for hover */
+    color: #007bff; /* 蓝色高亮 */
 }
 
-/* Home Page Styling */
+/* 首页布局 */
 #home-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    width: 100%;
-    text-align: left;
-    gap: 50px;
-    padding: 0 20px;
+    padding: 40px;
 }
 
-.home-layout {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.profile-img {
+    width: 200px; /* 图片尺寸增加 */
+    height: 200px; /* 确保图片为方形 */
+    border-radius: 0; /* 移除圆形样式 */
+    margin-bottom: 20px; /* 图片与文字间距 */
 }
 
+/* 文本样式 */
 .profile-section h1 {
     font-size: 3em;
     font-weight: 700;
-    color: #ffffff;
+    color: #000000; /* 黑色文字 */
+    text-align: center;
 }
 
 .profile-section .position {
     font-size: 1.5em;
-    color: #00ff99; /* Accent color */
+    color: #007bff; /* 蓝色标题 */
 }
 
 .profile-section .description {
     font-size: 1.2em;
     line-height: 1.6;
-    color: #cccccc; /* Subtle text color */
+    color: #333333; /* 深灰色文字 */
+    text-align: center;
 }
 
-.profile-img {
-    width: 150px;
-    border-radius: 50%;
-    border: 2px solid #00ff99;
-    margin-left: 20px;
-}
-
-/* Other Pages Layout */
+/* 其他页面布局 */
 #content-container {
     width: 80%;
-    max-width: 800px;
+    max-width: 900px;
     padding: 20px;
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    color: #ffffff;
+    margin: 60px auto 0 auto;
+    text-align: left;
 }
 
 #content-container h2 {
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
     font-size: 2em;
     font-weight: 700;
-    margin-bottom: 20px;
-    color: #ffffff;
-}
-
-#content-container ul {
-    list-style: disc;
-    padding-left: 20px;
+    color: #000000; /* 黑色标题 */
 }
 
 #content-container ul li {
     font-size: 1.2em;
-    line-height: 2;
-    margin-bottom: 10px;
-    color: #cccccc;
+    line-height: 1.8;
+    color: #333333; /* 深灰色文字 */
 }
 
-/* Footer */
+/* 页脚样式 */
 footer {
     width: 100%;
     text-align: center;
     padding: 10px 0;
-    background-color: #111111;
-    color: #888888;
+    background-color: #f9f9f9; /* 浅灰背景 */
+    color: #666666; /* 中灰文字 */
 }
