@@ -3,37 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Chengjie Li - Personal Homepage</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <title>Chengjie Li</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#research">Research Interests</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#connect">Connect with Me</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <nav>
-        <a href="#home" onclick="showSection('home')">Home</a>
-        <a href="#research" onclick="showSection('research')">Research Interests</a>
-        <a href="#education" onclick="showSection('education')">Education</a>
-        <a href="#contact" onclick="showSection('contact')">Connect with Me</a>
-    </nav>
-
-    <div id="home-container" class="container">
-        <section id="home" class="content-section home-layout">
-            <div class="profile-section">
+    <section id="home">
+        <div class="home-container">
+            <div class="home-text">
                 <h1>Chengjie Li</h1>
-                <p class="position">Master's student at LIESMARS, Wuhan University 🎓</p>
-                <p class="description">
-                    I am currently a Master's student in <strong>Cartography and Geographical Information System</strong> at <strong>LIESMARS, Wuhan University</strong>, with research interests in <strong>3D city models</strong>, <strong>3D urban morphology</strong>, <strong>urban microclimate</strong>, <strong>urban building energy modeling</strong>, and <strong>3D GIS</strong>. My current research focuses on <strong>combining the Vertical Greenery System with 3D city models</strong> to save energy consumption, improve urban comfort, and mitigate urban heat island.
+                <h2>Master's student at LIESMARS, Wuhan University 🎓</h2>
+                <p>
+                    I am currently a Master's student in <strong>Cartography and Geographical Information System</strong> at 
+                    <strong>LIESMARS, Wuhan University</strong>, with research interests in 
+                    <strong>3D city models</strong>, <strong>3D urban morphology</strong>, 
+                    <strong>urban microclimate</strong>, <strong>urban building energy modeling</strong>, and 
+                    <strong>3D GIS</strong>. My current research focuses on 
+                    <strong>combining the Vertical Greenery System with 3D city models</strong> to save energy consumption, 
+                    improve urban comfort, and mitigate urban heat island.
                 </p>
             </div>
-            <img src="profile.jpg" alt="Profile Picture" class="profile-img">
-        </section>
-    </div>
-    
-    <div id="content-container" class="container">
-        <section id="research" class="content-section">
+            <div class="home-image">
+                <img src="profile.jpg" alt="Chengjie Li">
+            </div>
+        </div>
+    </section>
+
+    <section id="research">
+        <div class="section-container">
             <h2>Research Interests</h2>
             <ul>
                 <li>Applications of 3D City Models</li>
@@ -43,38 +50,27 @@
                 <li>Vertical Greenery System</li>
                 <li>3D GIS</li>
             </ul>
-        </section>
+        </div>
+    </section>
 
-        <section id="education" class="content-section">
+    <section id="education">
+        <div class="section-container">
             <h2>Education</h2>
-            <ul>
-                <li><strong>Master's Degree</strong> in Cartography and Geographical Information System, Wuhan University (2023 - 2026)</li>
-                <li><strong>Bachelor's Degree</strong> in Geographical Information Science, South China Agricultural University (2018 - 2022)</li>
-            </ul>
-        </section>
+            <p><strong>Master's Degree</strong> in Cartography and Geographical Information System, Wuhan University (2023 - 2026)</p>
+            <p><strong>Bachelor's Degree</strong> in Geographical Information Science, South China Agricultural University (2018 - 2022)</p>
+        </div>
+    </section>
 
-        <section id="contact" class="content-section">
+    <section id="connect">
+        <div class="section-container">
             <h2>Connect with Me</h2>
-            <ul>
-                <li><a href="mailto:pipijie@whu.edu.cn">Email: pipijie@whu.edu.cn</a></li>
-                <li><a href="https://www.researchgate.net/profile/Chengjie-Li-9">ResearchGate</a></li>
-            </ul>
-        </section>
-    </div>
+            <p><a href="mailto:pipijie@whu.edu.cn">Email: pipijie@whu.edu.cn</a></p>
+            <p><a href="https://www.researchgate.net">ResearchGate</a></p>
+        </div>
+    </section>
 
     <footer>
         <p>© 2024 Chengjie Li. Built with 💻 by Chengjie.</p>
     </footer>
-
-    <script>
-        function showSection(sectionId) {
-            document.querySelectorAll('.content-section').forEach(function(section) {
-                section.style.display = 'none';
-            });
-            document.getElementById(sectionId).style.display = 'flex';
-        }
-
-        showSection('home');
-    </script>
 </body>
 </html>
