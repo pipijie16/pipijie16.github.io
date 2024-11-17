@@ -19,7 +19,7 @@ nav {
 }
 
 nav a {
-    color: #000000; /* 黑色文字适配白色背景 */
+    color: #000000;
     text-decoration: none;
     font-size: 1em;
     font-weight: 600;
@@ -33,62 +33,72 @@ nav a:hover {
 /* 首页布局 */
 #home-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     padding: 40px;
+    gap: 50px; /* 左右文字和图片间距 */
 }
 
 .profile-img {
-    width: 200px; /* 图片尺寸增加 */
-    height: 200px; /* 确保图片为方形 */
-    border-radius: 0; /* 移除圆形样式 */
-    margin-bottom: 20px; /* 图片与文字间距 */
+    width: 300px; /* 方形图片尺寸 */
+    height: 300px;
+    border-radius: 0; /* 去除圆角 */
+    margin-left: 20px; /* 与文字保持距离 */
 }
 
-/* 文本样式 */
+.profile-section {
+    text-align: left;
+    max-width: 600px;
+}
+
 .profile-section h1 {
     font-size: 3em;
     font-weight: 700;
-    color: #000000; /* 黑色文字 */
-    text-align: center;
+    color: #000000;
 }
 
 .profile-section .position {
     font-size: 1.5em;
-    color: #007bff; /* 蓝色标题 */
+    color: #007bff;
 }
 
 .profile-section .description {
     font-size: 1.2em;
-    line-height: 1.6;
-    color: #333333; /* 深灰色文字 */
-    text-align: center;
+    line-height: 1.8;
+    color: #333333;
 }
 
 /* 其他页面布局 */
 #content-container {
-    width: 80%;
-    max-width: 900px;
+    width: 90%;
+    max-width: 1200px;
     padding: 20px;
-    margin: 60px auto 0 auto;
-    text-align: left;
+    margin-top: 60px;
 }
 
 #content-container h2 {
-    text-align: left;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 700;
-    color: #000000; /* 黑色标题 */
+    margin-bottom: 20px;
+    color: #007bff; /* 标题蓝色 */
+    margin-left: 0; /* 标题左对齐 */
+}
+
+#content-container ul {
+    list-style: none; /* 去掉列表符号 */
+    padding: 0;
+    margin: 0;
 }
 
 #content-container ul li {
-    font-size: 1.2em;
-    line-height: 1.8;
-    color: #333333; /* 深灰色文字 */
+    font-size: 1.5em;
+    line-height: 2; /* 增加行间距 */
+    color: #000000;
+    white-space: nowrap; /* 强制内容不换行 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 20px; /* 内容与标题对齐 */
 }
 
 /* 页脚样式 */
@@ -96,6 +106,6 @@ footer {
     width: 100%;
     text-align: center;
     padding: 10px 0;
-    background-color: #f9f9f9; /* 浅灰背景 */
-    color: #666666; /* 中灰文字 */
+    background-color: #f1f1f1; /* 浅灰背景 */
+    color: #666666;
 }
