@@ -1,86 +1,113 @@
-/* General Styles */
-body {
+/* 通用样式 */
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f7fa;
     color: #333;
 }
 
-header {
-    background-color: #f8f8f8;
-    padding: 10px 20px;
+/* 容器 */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-nav ul {
-    list-style: none;
+/* 头部样式 */
+.header {
+    background-color: #0066cc;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.header .name {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.header .title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+/* 导航样式 */
+.nav {
+    background-color: #ffffff;
+    border-bottom: 2px solid #f1f1f1;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav ul {
     display: flex;
-    justify-content: flex-end;
-    padding: 0;
+    justify-content: center;
+    list-style-type: none;
+    padding: 15px 0;
 }
 
-nav ul li {
-    margin-left: 20px;
+.nav ul li {
+    margin: 0 20px;
 }
 
-nav ul li a {
+.nav ul li a {
     text-decoration: none;
     color: #333;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
-section {
-    padding: 50px 20px;
+.nav ul li a:hover {
+    color: #0066cc;
 }
 
-footer {
+/* 各个板块样式 */
+.section {
+    padding: 60px 0;
     text-align: center;
-    padding: 10px 0;
-    background-color: #f8f8f8;
 }
 
-/* Home Section */
-.home-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: left;
-    margin-top: 50px;
+.section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
-.home-text {
-    max-width: 600px;
-    margin-right: 50px;
-}
-
-.home-image img {
-    max-width: 250px;
-    height: auto;
-    border: 2px solid #ccc;
-}
-
-/* Section Container */
-.section-container {
+.section p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
     max-width: 800px;
     margin: 0 auto;
-    text-align: left;
 }
 
-.section-container h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.section-container ul {
-    list-style: none;
+.section ul {
+    list-style-type: none;
     padding: 0;
+    margin-top: 30px;
 }
 
-.section-container ul li {
-    margin-bottom: 10px;
+.section ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #555;
 }
 
-.section-container p {
-    margin-bottom: 10px;
-    font-size: 16px;
+/* 页脚样式 */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    font-size: 1rem;
+    margin: 0;
 }
