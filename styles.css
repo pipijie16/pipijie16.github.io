@@ -99,6 +99,18 @@ footer {
     font-size: 16px;
 }
 
+/* Research & Connect with Me Layout */
+#research, #connect {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#research .section-container, #connect .section-container {
+    width: 48%;
+}
+
 /* Section Header */
 .section-container h2 {
     font-size: 24px;
@@ -121,5 +133,5 @@ footer {
 }
 
 .right-bar {
-    background-color: transparent; /* Ensures it matches the page background */
+    background-color: transparent;
 }
