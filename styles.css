@@ -99,17 +99,16 @@ footer {
     text-align: left;
 }
 
-/* Research & Connect with Me Layout */
+/* Research & Connect with Me Layout: Left Align */
 #research, #connect {
     display: flex;
-    justify-content: center;
-    gap: 40px;
+    justify-content: flex-start;
+    gap: 20px;
     flex-wrap: wrap;
-    width: 100%;
 }
 
 #research .section-container, #connect .section-container {
-    width: 48%;
+    width: 100%;
 }
 
 /* Section Header */
