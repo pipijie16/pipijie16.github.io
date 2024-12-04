@@ -15,6 +15,26 @@ body {
     min-height: 100vh;
 }
 
+nav {
+    position: fixed;
+    top: 20px;
+    right: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #555555;
+}
+
 header {
     background-color: #f8f8f8;
     padding: 10px 20px;
@@ -74,26 +94,7 @@ footer {
     text-align: left;
 }
 
-/* Research Interests & Connect with Me Section: Ensuring Left Alignment */
-#research, #connect {
-    display: flex;
-    justify-content: flex-start; /* Ensures left alignment */
-    gap: 20px;  /* Adds spacing between the two sections */
-}
-
-#research .section-container, #connect .section-container {
-    width: 48%; /* Ensures that the two sections are side by side */
-}
-
-/* Research Interests */
-#research h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-/* Education Section */
-#education .section-container p {
+.section-container p {
     margin-bottom: 10px;
     font-size: 16px;
 }
