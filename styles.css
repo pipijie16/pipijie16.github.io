@@ -101,10 +101,9 @@ footer {
 
 /* Research & Connect with Me Layout: Left Align */
 #research, #connect {
-    display: flex;
-    justify-content: flex-start;
-    gap: 20px;
-    flex-wrap: wrap;
+    display: block;
+    text-align: left;
+    margin-top: 20px;
 }
 
 #research .section-container, #connect .section-container {
