@@ -74,6 +74,31 @@ footer {
     text-align: left;
 }
 
+/* Research Interests & Connect with Me Section: Ensuring Left Alignment */
+#research, #connect {
+    display: flex;
+    justify-content: flex-start; /* Ensures left alignment */
+    gap: 20px;  /* Adds spacing between the two sections */
+}
+
+#research .section-container, #connect .section-container {
+    width: 48%; /* Ensures that the two sections are side by side */
+}
+
+/* Research Interests */
+#research h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Education Section */
+#education .section-container p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Section Header */
 .section-container h2 {
     font-size: 24px;
     margin-bottom: 20px;
@@ -92,4 +117,8 @@ footer {
 .section-container p {
     margin-bottom: 10px;
     font-size: 16px;
+}
+
+.right-bar {
+    background-color: transparent; /* Ensures it matches the page background */
 }
