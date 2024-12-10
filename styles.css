@@ -89,20 +89,19 @@ footer {
 .home-image img {
     max-width: 250px;
     height: auto;
-    border: 2px solid #ccc;
+    border: none;  /* Remove the border */
 }
 
 /* Section Container */
 .section-container {
     max-width: 800px;
     margin: 0 auto;
-    text-align: left;
+    text-align: left;  /* Ensure all text is left-aligned */
 }
 
 /* Research & Connect with Me Layout: Left Align */
 #research, #connect {
     display: block;
-    text-align: left;
     margin-top: 20px;
 }
 
