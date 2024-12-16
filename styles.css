@@ -102,8 +102,8 @@ footer {
 /* Section Container */
 .section-container {
     max-width: 800px;
-    margin: 0;
-    padding-left: 20px;
+    margin: 0 auto;
+    padding-left: 0;
     text-align: left;
 }
 
@@ -115,15 +115,16 @@ footer {
 
 #education .section-container {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    gap: 20px;
+    gap: 40px;
+    flex-wrap: nowrap;
 }
 
 #education .section-container p {
     margin: 0;
     flex: 1;
-    min-width: 300px;
+    white-space: nowrap;
+    text-align: left;
 }
 
 #research .section-container, #connect .section-container {
