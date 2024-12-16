@@ -23,7 +23,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     gap: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.7);
     z-index: 1000;
     padding: 10px 20px;
 }
@@ -102,8 +102,8 @@ footer {
 /* Section Container */
 .section-container {
     max-width: 800px;
-    margin: 0 auto;
-    padding-left: 0;
+    margin: 0;
+    padding-left: 200px;
     text-align: left;
 }
 
@@ -113,22 +113,20 @@ footer {
     margin-top: 20px;
 }
 
-#education .section-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    flex-wrap: nowrap;
+#research .section-container, #connect .section-container {
+    width: 100%;
 }
 
 #education .section-container p {
     margin: 0;
-    flex: 1;
     white-space: nowrap;
-    text-align: left;
 }
 
-#research .section-container, #connect .section-container {
-    width: 100%;
+@media (max-width: 768px) {
+    #education .section-container p {
+        white-space: normal;
+        text-overflow: clip;
+    }
 }
 
 /* Section Header */
