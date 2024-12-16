@@ -57,7 +57,9 @@ nav ul li a {
 }
 
 section {
-    padding: 50px 20px;
+    align-self: stretch;
+    display: block;
+    text-align: left;
 }
 
 footer {
@@ -96,7 +98,7 @@ footer {
 .section-container {
     max-width: 800px;
     margin: 0 auto;
-    text-align: left;  /* Ensure all text is left-aligned */
+    text-align: left; /* Ensure all text is left-aligned */
 }
 
 /* Research & Connect with Me Layout: Left Align */
