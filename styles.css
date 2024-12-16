@@ -65,6 +65,7 @@ section {
     align-self: stretch;
     display: block;
     text-align: left;
+    margin-bottom: 40px;
 }
 
 footer {
@@ -103,7 +104,7 @@ footer {
 .section-container {
     max-width: 800px;
     margin: 0;
-    padding-left: 200px;
+    padding-left: 360px;
     text-align: left;
 }
 
@@ -118,7 +119,7 @@ footer {
 }
 
 #education .section-container p {
-    margin: 0;
+    margin: 10px 0;
     white-space: nowrap;
 }
 
