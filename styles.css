@@ -113,6 +113,19 @@ footer {
     margin-top: 20px;
 }
 
+#education .section-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#education .section-container p {
+    margin: 0;
+    flex: 1;
+    min-width: 300px;
+}
+
 #research .section-container, #connect .section-container {
     width: 100%;
 }
