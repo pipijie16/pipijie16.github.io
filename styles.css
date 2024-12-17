@@ -135,8 +135,18 @@ footer {
     font-size: 28px;
     margin-bottom: 20px;
     text-align: left;
-    white-space: nowrap;
 }
+
+h2 {
+    display: inline-flex;
+    align-items: center;
+}
+
+.emoji {
+    margin-left: 5px;
+    display: inline-block;
+}
+
 
 .section-container ul {
     list-style: none;
