@@ -137,17 +137,6 @@ footer {
     text-align: left;
 }
 
-h2 {
-    display: inline-flex;
-    align-items: center;
-}
-
-.emoji {
-    margin-left: 5px;
-    display: inline-block;
-}
-
-
 .section-container ul {
     list-style: none;
     padding: 0;
