@@ -109,7 +109,7 @@ footer {
 } */
 
 .section-container {
-    margin-left: calc((100% - 800px) / 2);
+    margin-left: calc((100% - 900px) / 2);
     padding-left: 0;
     text-align: left;
     white-space: nowrap;
