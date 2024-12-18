@@ -101,18 +101,20 @@ footer {
 }
 
 /* Section Container */
-.section-container {
+/* .section-container {
     margin: 0;
     padding-left: 34rem;
     text-align: left;
     min-width: 100%;
-}
-
-/* .section-container {
-    max-width: 800px;
-    margin-left: calc((100vw - 600px) / 2);
-    text-align: left;
 } */
+
+.section-container {
+    margin-left: calc((100% - 600px) / 2);
+    padding-left: 0;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+}
 
 /* Research & Connect with Me Layout: Left Align */
 #research, #connect {
@@ -131,8 +133,9 @@ footer {
 
 @media (max-width: 768px) {
     .section-container {
-        padding-left: 5rem;
-        min-width: 100%;
+        max-width: 95%;
+        margin-left: 2%;
+        white-space: normal;
     }
 }
 
