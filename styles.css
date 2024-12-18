@@ -100,12 +100,16 @@ footer {
     border: none;  /* Remove the border */
 }
 
+.align-container {
+    width: 600px;
+    margin-left: calc((100vw - 600px) / 2 - 50px);
+}
+
 /* Section Container */
 .section-container {
-    max-width: 600px;
-    margin: 0 auto;
+    width: 600px;
+    margin-left: calc((100vw - 600px) / 2 - 50px);
     text-align: left;
-    padding: 0;
 }
 
 /* Research & Connect with Me Layout: Left Align */
