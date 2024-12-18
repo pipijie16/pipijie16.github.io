@@ -107,7 +107,7 @@ footer {
     padding-left: 8%; 
     padding-right: 8%;
     text-align: left;
-    max-width: 100%;
+    max-width: 1200px;
 }
 
 @media (max-width: 768px) {
