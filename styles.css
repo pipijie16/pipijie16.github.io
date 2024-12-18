@@ -102,10 +102,10 @@ footer {
 
 /* Section Container */
 .section-container {
-    max-width: 800px;
     margin: 0;
-    padding-left: 30vw;
+    padding-left: 19rem;
     text-align: left;
+    min-width: 100%;
 }
 
 /* .section-container {
@@ -130,9 +130,9 @@ footer {
 }
 
 @media (max-width: 768px) {
-    #education .section-container p {
-        white-space: normal;
-        text-overflow: clip;
+    .section-container {
+        padding-left: 5rem;
+        min-width: 100%;
     }
 }
 
