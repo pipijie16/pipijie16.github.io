@@ -101,7 +101,15 @@ footer {
 }
 
 /* Section Container */
+/* .section-container {
+    max-width: 800px;
+    margin: 0;
+    padding-left: 340px;
+    text-align: left;
+} */
+
 .section-container {
+    max-width: 800px;
     margin-left: calc((100vw - 600px) / 2 - 50px);
     text-align: left;
 }
