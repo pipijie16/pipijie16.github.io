@@ -103,9 +103,18 @@ footer {
 
 /* Section Container */
 .section-container {
-    margin: 0;
-    padding-left: 28%;
+    margin: 0 auto;
+    padding-left: 5%; 
+    padding-right: 5%;
     text-align: left;
+    max-width: 1200px;
+}
+
+@media (max-width: 768px) {
+    .section-container {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
 }
 
 /* Research & Connect with Me Layout: Left Align */
@@ -121,14 +130,6 @@ footer {
 #education .section-container p {
     margin: 10px 0;
     white-space: nowrap;
-}
-
-@media (max-width: 768px) {
-    .section-container {
-        max-width: 95%;
-        margin-left: 2%;
-        white-space: normal;
-    }
 }
 
 /* Section Header */
