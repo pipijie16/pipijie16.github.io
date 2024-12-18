@@ -104,8 +104,8 @@ footer {
 /* Section Container */
 .section-container {
     margin: 0 auto;
-    padding-left: 5%; 
-    padding-right: 5%;
+    padding-left: 10%; 
+    padding-right: 10%;
     text-align: left;
     max-width: 1200px;
 }
