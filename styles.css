@@ -103,10 +103,8 @@ footer {
 /* Section Container */
 .section-container {
     margin: 0;
-    margin-left: 30%;
+    margin-left: 27%;
     text-align: left;
-    white-space: nowrap;
-    overflow: hidden;
 }
 
 /* .section-container {
