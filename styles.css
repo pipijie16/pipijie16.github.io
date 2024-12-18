@@ -75,37 +75,37 @@ footer {
 }
 
 /* Home Section */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Home 部分居中 */
 .home-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: left;
+    text-align: center;
     margin-top: 50px;
 }
 
 .home-text {
-    max-width: 600px;
-    margin-right: 50px;
-}
-
-.home-text p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-.home-image img {
-    max-width: 250px;
-    height: auto;
-    border: none;  /* Remove the border */
-}
-
-/* Section Container */
-.section-container {
-    max-width: 800px;
-    margin: 0;
-    padding-left: 340px;
     text-align: left;
+    margin: 0 auto;
+}
+
+.home-text h1,
+.home-text h2,
+.home-text p {
+    margin-left: 0;
+}
+
+.section-container {
+    text-align: left;
+    margin-left: 0;
+    padding: 0;
+}
+
+section {
+    margin-bottom: 40px;
 }
 
 /* Research & Connect with Me Layout: Left Align */
