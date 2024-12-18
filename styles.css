@@ -103,17 +103,9 @@ footer {
 /* Section Container */
 .section-container {
     margin: 0;
-    margin-left: 27%;
+    margin-left: 29%;
     text-align: left;
 }
-
-/* .section-container {
-    margin-left: 30%;
-    padding-left: 0;
-    text-align: left;
-    white-space: nowrap;
-    overflow: hidden;
-} */
 
 /* Research & Connect with Me Layout: Left Align */
 #research, #connect {
