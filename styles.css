@@ -107,11 +107,10 @@ footer {
 .section-container {
     margin: 0 auto;
     padding-left: calc((100% - 850px) / 2);
-    padding-right: calc((100% - 850px) / 2);
+    /* padding-right: calc((100% - 850px) / 2); */
     text-align: left;
     max-width: 1200px;
     display: flex;
-    flex-direction: column;
     gap: 20px;
 }
 
