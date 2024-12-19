@@ -69,6 +69,7 @@ section {
 }
 
 footer {
+    bottom: 0;
     position:fixed;
     text-align: center;
     padding: 10px 0;
@@ -121,8 +122,8 @@ footer {
 
 .section-container {
     margin: 0 auto;
-    padding-left: 9%;
-    padding-right: 9%;
+    padding-left: 7%;
+    padding-right: 7%;
     text-align: left;
     max-width: 1200px;
     display: flex;
