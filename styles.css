@@ -122,31 +122,39 @@ footer {
 }
  */
 
-/* Section Container with Centered Box */
+/* Invisible Box for Center Alignment */
 .section-container {
     display: flex;
     justify-content: center; /* Center the box */
-    margin: 40px auto; /* Add margin to separate sections */
-    max-width: 800px; /* Set max width to control the size */
-    padding: 20px; /* Add padding for spacing inside the box */
-    border-radius: 8px; /* Rounded corners */
-    background-color: #f8f8f8; /* Background color */
+    align-items: flex-start;
+    margin: 0 auto;
+    padding-left: 8%;
+    padding-right: 8%;
+    max-width: 1200px; /* Match home-container width */
 }
 
-.section-container h2 {
-    text-align: left; /* Left-align the title */
+.section-box {
+    width: 100%; /* Occupy the full width of the container */
+    max-width: 600px; /* Match the home-text max width */
+    text-align: left;
+    white-space: nowrap; /* Prevent content from wrapping */
+}
+
+.section-box h2 {
     margin-bottom: 20px;
+    text-align: left; /* Left-align titles */
 }
 
-.section-container p,
-.section-container ul {
-    text-align: left; /* Left-align content */
+.section-box p,
+.section-box ul {
     margin: 10px 0;
+    font-size: 16px;
+    text-align: left; /* Keep content left-aligned */
 }
 
 @media (max-width: 768px) {
-    .section-container {
-        padding: 10px; /* Reduce padding for smaller screens */
+    .section-box {
+        max-width: 100%; /* Adjust to fit smaller screens */
     }
 }
 
@@ -184,8 +192,8 @@ footer {
 .section-container p {
     margin-bottom: 10px;
     font-size: 16px;
-} */
-
+}
+ */
 .right-bar {
     background-color: transparent;
 }
