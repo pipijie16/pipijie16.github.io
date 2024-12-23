@@ -80,7 +80,7 @@ footer {
 /* Home Section */
 .home-container {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     flex-wrap: wrap;
     text-align: left;
