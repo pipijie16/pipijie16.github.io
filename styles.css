@@ -131,6 +131,8 @@ footer {
     margin: 10px 0;
     font-size: 18px;
     list-style: none;
+    margin-bottom: 15px;
+    line-height: 1.8;
     text-align: left; /* Keep content left-aligned */
 }
 
