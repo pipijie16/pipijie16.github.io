@@ -128,9 +128,9 @@ footer {
     justify-content: center; /* Center the box */
     align-items: flex-start;
     margin: 0 auto;
-    padding-left: 8%;
-    padding-right: 8%;
-    max-width: 1200px; /* Match home-container width */
+    /* padding-left: 8%;
+    padding-right: 8%; */
+    max-width: 900px; /* Match home-container width */
 }
 
 .section-box {
