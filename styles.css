@@ -108,8 +108,8 @@ footer {
 /* Section Container */
 .section-container {
     margin: 0 auto;
-    padding-left: 9%; 
-    padding-right: 9%;
+    padding-left: 8.75%; 
+    padding-right: 8.75%;
     text-align: left;
     max-width: 1200px;
 }
