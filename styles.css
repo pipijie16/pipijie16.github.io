@@ -11,7 +11,7 @@ body {
     color: #333333;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
     min-height: 100vh;
 }
 
@@ -80,7 +80,7 @@ footer {
 /* Home Section */
 .home-container {
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     text-align: left;
@@ -106,7 +106,7 @@ footer {
 }
 
 /* Section Container */
-.section-container {
+/* .section-container {
     margin: 0 auto;
     padding-left: 8%; 
     padding-right: 8%;
@@ -118,6 +118,35 @@ footer {
     .section-container {
         padding-left: 2%;
         padding-right: 2%;
+    }
+}
+ */
+
+/* Section Container with Centered Box */
+.section-container {
+    display: flex;
+    justify-content: center; /* Center the box */
+    margin: 40px auto; /* Add margin to separate sections */
+    max-width: 800px; /* Set max width to control the size */
+    padding: 20px; /* Add padding for spacing inside the box */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f8f8f8; /* Background color */
+}
+
+.section-container h2 {
+    text-align: left; /* Left-align the title */
+    margin-bottom: 20px;
+}
+
+.section-container p,
+.section-container ul {
+    text-align: left; /* Left-align content */
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .section-container {
+        padding: 10px; /* Reduce padding for smaller screens */
     }
 }
 
@@ -137,7 +166,7 @@ footer {
 }
 
 /* Section Header */
-.section-container h2 {
+/* .section-container h2 {
     font-size: 28px;
     margin-bottom: 20px;
     text-align: left;
@@ -155,7 +184,7 @@ footer {
 .section-container p {
     margin-bottom: 10px;
     font-size: 16px;
-}
+} */
 
 .right-bar {
     background-color: transparent;
