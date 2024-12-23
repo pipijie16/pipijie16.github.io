@@ -135,9 +135,9 @@ footer {
 
 .section-box {
     width: 100%; /* Occupy the full width of the container */
-    max-width: 600px; /* Match the home-text max width */
-    text-align: left;
-    white-space: nowrap; /* Prevent content from wrapping */
+    max-width: 900px; /* 保持与section-container一致的宽度 */
+    text-align: left; /* 左对齐内容 */
+    white-space: nowrap; /* 确保内容不换行 */
 }
 
 .section-box h2 {
