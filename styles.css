@@ -11,7 +11,7 @@ body {
     color: #333333;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     min-height: 100vh;
 }
 
@@ -85,8 +85,8 @@ footer {
     flex-wrap: wrap;
     text-align: left;
     margin-top: 50px;
-    padding-left: 9%; 
-    padding-right: 9%;
+    padding-left: 8%; 
+    padding-right: 8%;
 }
 
 .home-text {
@@ -108,8 +108,8 @@ footer {
 /* Section Container */
 .section-container {
     margin: 0 auto;
-    padding-left: 8.5%; 
-    padding-right: 11%;
+    padding-left: 8%; 
+    padding-right: 8%;
     text-align: left;
     max-width: 1200px;
 }
