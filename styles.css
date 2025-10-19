@@ -142,6 +142,37 @@ footer {
     }
 }
 
+.publication-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.pub-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.pub-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.pub-text h5 {
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
+}
+
+.pub-text p {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+
 /* Research & Connect with Me Layout: Left Align */
 #research, #connect {
     display: block;
@@ -161,5 +192,6 @@ footer {
     background-color: transparent;
 
 }
+
 
 
