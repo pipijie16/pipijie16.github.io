@@ -136,6 +136,35 @@ footer {
     text-align: left; /* Keep content left-aligned */
 }
 
+#publications .d-none.d-md-block .row {
+    display: flex;          
+    align-items: flex-start;
+    gap: 24px;              
+    flex-wrap: wrap;        
+}
+
+#publications .d-none.d-md-block .col-md-3 {
+    flex: 0 0 auto;
+    max-width: none;
+    padding: 0;
+}
+
+#publications .d-none.d-md-block .col-md-3 img,
+#publications .d-none.d-md-block .col-md-3 .lazy {
+    max-width: 260px;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+#publications .d-none.d-md-block .col-md-9 {
+    flex: 1 1 0;
+    min-width: 280px;
+    padding-top: 6px;
+}
+
 @media (max-width: 768px) {
     .section-box {
         max-width: 100%; /* Adjust to fit smaller screens */
