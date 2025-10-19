@@ -147,16 +147,15 @@ footer {
     flex: 0 0 auto;
     max-width: none;
     padding: 0;
+    margin-top: 0.6em;
 }
 
 #publications .d-none.d-md-block .col-md-3 img,
 #publications .d-none.d-md-block .col-md-3 .lazy {
-    max-width: 260px;
+    max-width: 320px;
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 6px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
 }
 
 #publications .d-none.d-md-block .col-md-9 {
