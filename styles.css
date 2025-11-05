@@ -165,7 +165,7 @@ footer {
 }
 
 .publication-spacing {
-    margin-bottom: 10rem; 
+    margin-bottom: 3rem; 
 }
 
 @media (max-width: 768px) {
@@ -198,6 +198,7 @@ footer {
     background-color: transparent;
 
 }
+
 
 
 
